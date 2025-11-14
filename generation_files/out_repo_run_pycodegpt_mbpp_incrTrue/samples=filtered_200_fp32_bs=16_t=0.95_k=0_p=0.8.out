@@ -1,0 +1,14 @@
+../generation_files/out_repo_run_pycodegpt_mbpp_incrTrue/samples=filtered_200_fp32_bs=16_t=0.95_k=0_p=0.8.jsonl
+python /data/newGenAi/text2code_mrpt/CodeGeeX/codegeex/benchmark/mbpp/evaluate_mbpp.py     --input_file ../generation_files/out_repo_run_pycodegpt_mbpp_incrTrue/samples=filtered_200_fp32_bs=16_t=0.95_k=0_p=0.8.jsonl     --n_workers 6     --tmp_dir /data/newGenAi/text2code_mrpt/CodeGeeX/codegeex/benchmark/mbpp/     --problem_file /data/newGenAi/text2code_mrpt/CodeGeeX/mbpp_test.jsonl     --timeout 5
+Reading samples...
+Counter({'11_0': 200, '11_1': 200, '11_2': 200, '11_3': 200, '11_4': 200, '11_5': 200, '11_6': 200, '11_7': 200, '11_8': 200})
+9 500
+Running test suites...
+Total (macro): 1800
+Correct (macro): 41
+Total (micro): 1800
+Correct (micro): 41
+{'macropass@1': 0.0227777777777778, 'macropass@10': 0.10056013133449064, 'macropass@100': 0.11111111111111083}
+{'micropass@1': 0.022777777777777897, 'micropass@10': 0.206257987196782, 'micropass@100': 0.9065859447801053}
+Writing to:  ../generation_files/out_repo_run_pycodegpt_mbpp_incrTrue/samples=filtered_200_fp32_bs=16_t=0.95_k=0_p=0.8_results.jsonl
+Evaluation finished.
